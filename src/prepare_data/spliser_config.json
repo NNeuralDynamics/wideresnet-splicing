@@ -1,0 +1,18 @@
+{
+    "bam_file_list": "./bam_list.tsv",
+    "spliser_script": "../SpliSER/SpliSER_v0_1_8.py",
+    "spliser_dir": "./output",
+    "junction_files_dir": "./output/junction_files",
+    "samples_file": "./output/samples_file.tsv",
+    "process_output_dir": "./output/process",
+    "output_combined": "./output/spliser_combined",
+    "output_diffspliser": "./output/spliser_output",
+    "gtf_file": "../GRCh38/gencode.v46.primary_assembly.annotation.gtf",
+    "n_threads": 60,
+    "skip_processing": false,
+    "only_process": true,
+    "regtools_args": ["-a", "8", "-m", "50", "-M", "500000", "-s", "RF"],
+    "spliser_process_args": ["--isStranded", "-s", "rf", "-m", "500000", "--beta2Cryptic"],
+    "spliser_combine_args": ["--isStranded", "-s", "rf", "--n_jobs", "30"],
+    "spliser_output_args": []
+}
